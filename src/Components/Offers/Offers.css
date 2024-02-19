@@ -1,0 +1,40 @@
+
+
+
+.offers {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    padding: 0px 140px;
+    background-color: rgb(247, 247, 192);
+  }
+  .offers-right img {
+    height: 90%;
+    margin-left: 10%;
+  }
+  .offers-left {
+    font-weight: bolder;
+    font-size: 180%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .offers-left button {
+    all: unset;
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(228, 228, 133);
+    border-radius: 60px;
+    height: 50px;
+    font-size: 1rem;
+    color: black;
+  }
+  .offers-left button:hover {
+    cursor: pointer;
+    background-color: rgb(155, 155, 65);
+  }
+  
