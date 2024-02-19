@@ -1,0 +1,18 @@
+.item img {
+  width: 200px;
+  height: 70%;
+}
+.item:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+.item {
+  padding: 10px;
+}
+.item-prices {
+  margin-top: 10px;
+}
+.item-price-old {
+  color: #8c8c8c;
+  text-decoration: line-through;
+}

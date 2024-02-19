@@ -1,0 +1,38 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 50px;
+  cursor: pointer;
+}
+.footer {
+  width: 40%;
+  margin-left: 400px;
+}
+.footerlogo {
+  width: 100%;
+  text-align: center;
+}
+.footer-icons-container img {
+  height: 30px;
+  margin-left: 30px;
+}
+.footer-social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.border-top {
+  border-top: 2px solid #7777;
+  border-width: 100%;
+  margin-top: 10px;
+  background-color: black;
+  color: wheat;
+}
+.border-bottom {
+  border-top: 2px solid rgba(189, 189, 189, 0.014);
+  border-width: 100%;
+  margin-top: 10px;
+  padding: 2px;
+}
