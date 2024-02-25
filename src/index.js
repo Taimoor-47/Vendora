@@ -1,5 +1,13 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from "./App"
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import ShopContextProvider from "./ShopContext";
 
-ReactDOM.render(<App/>,document.getElementById("root"))
+ReactDOM.render(
+
+
+<ShopContextProvider>
+    <App />
+</ShopContextProvider>, document.getElementById("root")
+
+);

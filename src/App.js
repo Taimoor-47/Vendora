@@ -1,12 +1,17 @@
 // App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Men from "./Pages/Men";
-import Women from "./Pages/Women";
+
+
 import Shop from "./Pages/Shop";
-import Kids from "./Pages/kids";
-import Navbar from "./Components/Navbar/Navbar"
+import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import men_banner from "./Assets/banner_mens.png";
+import women_banner from "./Assets/banner_women.png";
+import kids_banner from "./Assets/banner_kids.png";
+import ShopCategory from "./Pages/ShopCategory";
+import LoginSignup from "./Pages/LoginSignup";
+
 
 function App() {
   return (
@@ -15,10 +20,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Shop />} />
-        <Route path="/women" element={<Women />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/kids" element={<Kids />} />
-        {/* Add more routes as needed */}
+        <Route path="/women" element={<ShopCategory banner={women_banner} category="women"/> }  />
+        <Route path="/men" banner={men_banner} element={<ShopCategory banner={men_banner} category="men"/>} />
+        <Route path="/kids" banner={kids_banner} element={<ShopCategory banner={kids_banner} category="kid"/>} />
+        <Route path="/login" element={<LoginSignup />}></Route>
       </Routes>
       <Footer />
     </Router>
